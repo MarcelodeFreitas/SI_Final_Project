@@ -1,15 +1,15 @@
 package Agents;
 
 import jade.core.Agent;
-//
-//import java.io.IOException;
-//import java.util.Calendar;
-//import java.util.Random;
-//
-//import jade.core.AID;
-//import jade.core.behaviours.CyclicBehaviour;
-//import jade.core.behaviours.SimpleBehaviour;
-//import jade.lang.acl.ACLMessage;
+
+import java.io.IOException;
+import java.util.Calendar;
+import java.util.Random;
+
+import jade.core.AID;
+import jade.core.behaviours.CyclicBehaviour;
+import jade.core.behaviours.SimpleBehaviour;
+import jade.lang.acl.ACLMessage;
 
 public class Utilizador extends Agent{
 	private long start, end;
@@ -82,7 +82,7 @@ public class Utilizador extends Agent{
 		System.out.println("A terminar utilizador");
 		end = (Calendar.getInstance()).getTimeInMillis();
 		start = end - start;
-		System.out.println("Tempo de execução do utilizador:" + start);
+		System.out.println("Tempo de utilização da bicicleta:" + start);
 	}
 
 }

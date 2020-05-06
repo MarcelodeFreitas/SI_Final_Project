@@ -54,14 +54,14 @@ public class Utilizador extends Agent{
 			//		+ yDestination + ")");
 
 			AID receiver = new AID();
-			receiver.setLocalName("Manager");
+			receiver.setLocalName("Interface");
 
 			ACLMessage mensagem = new ACLMessage(ACLMessage.REQUEST);
 			//mensagem.setContent("" + xOrigin + "," + yOrigin + "," + xDestination + "," + yDestination);
 			mensagem.addReceiver(receiver);
 			
 			try {
-				mensagem.setContentObject(costumerr);
+				mensagem.setContentObject(userr);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

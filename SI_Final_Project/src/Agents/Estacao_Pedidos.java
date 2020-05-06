@@ -25,6 +25,18 @@ class Estacao_Pedidos implements java.io.Serializable {
 	public int getnumero_docas() {
 		return numero_docas;
 	}
+	
+	public void sety_estacao(int y_estacao){
+		this.y_estacao = y_estacao;
+	}
+	
+	public void setnumero_bicicletas(int numero_bicicletas){
+		this.numero_bicicletas = numero_bicicletas;
+	}
+	
+	public void setnumero_docas(int numero_docas){
+		this.numero_docas = numero_docas;
+	}
 
 	
 }
